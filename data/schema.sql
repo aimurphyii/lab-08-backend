@@ -35,6 +35,7 @@ CREATE TABLE events(
   link VARCHAR (255),
   name VARCHAR(255),
   event_date VARCHAR(255),
+  summary VARCHAR(500),
   location_id INTEGER NOT NULL,
   FOREIGN KEY (location_id) REFERENCES locations (id)
 )
