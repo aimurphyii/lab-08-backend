@@ -183,7 +183,7 @@ function Weather(day) {
 
 function getEvents(request, response) {
   let query = request.query.data.id;
-  let sql = `SELECT * FROM events WHERE location_if=$1;`;
+  let sql = `SELECT * FROM events WHERE location_id=$1;`;
   let values = [query];
 
   client.query(sql, values)
