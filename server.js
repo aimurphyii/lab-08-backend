@@ -109,6 +109,7 @@ function Location(query, location) {
   this.longitude = location.geometry.location.lng;
 }
 
+// pre database entry
 // function getWeather(request, response) {
 //   const url = `https://api.darksky.net/forecast/${process.env.WEATHER_API_KEY}/${request.query.data.latitude},${request.query.data.longitude}`;
 
@@ -166,6 +167,7 @@ function Weather(day) {
   this.time = new Date(day.time * 1000).toString().slice(0, 15);
 }
 
+// We can keep these for comparisson
 // function getEvents(request, response) {
 //   const url = `https://www.eventbriteapi.com/v3/events/search?token=${process.env.EVENTBRITE_API_KEY}&location.address=${request.query.data.formatted_query}`;
 
